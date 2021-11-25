@@ -1,10 +1,19 @@
 @ECHO OFF
 
-@REM Remember the current batch location
-set mypath=%cd%
-
+@REM ############# Script Assmption ###############
+@REM Onenote backups all target onenote files to the local drive. 
+@REM This script will set read-only to the backuped files, and then read them with onenote application. 
 @REM For latest Windows 10 Users, before you run, may need to turn off "Controlled folder access" under Ransomware protection in Windows Security
 @REM Also check Onenote backup directory under File->Options->Save & Backup->Backup folder
+@REM Currently this script sets the backup location to "C:\Users\malwa\OneDrive\Documents\OneNote Notebooks\". 
+
+@REM set backup_file_path="C:\Users\malwa\Documents\backup"
+@REM set note_path=OSCPNote
+@REM set current_file_path="C:\Users\malwa\OneDrive\Documents\OneNote Notebooks"
+@REM set file_file_path="C:\Users\malwa\OneDrive\Documents\OneNote Notebooks"
+
+@REM Remember the current batch file location
+set mypath=%cd%
 
 @REM delete all existing files
 del /Q /F /S "C:\Users\malwa\OneDrive\Documents\OneNote Notebooks\*"
