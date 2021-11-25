@@ -10,7 +10,7 @@
 @REM set backup_file_path="C:\Users\malwa\Documents\backup"
 @REM set note_path=OSCPNote
 @REM set current_file_path="C:\Users\malwa\OneDrive\Documents\OneNote Notebooks"
-@REM set file_file_path="C:\Users\malwa\OneDrive\Documents\OneNote Notebooks"
+@REM set final_file_path="C:\Users\malwa\OneDrive\Documents\OneNote Notebooks"
 
 @REM Remember the current batch file location
 set mypath=%cd%
